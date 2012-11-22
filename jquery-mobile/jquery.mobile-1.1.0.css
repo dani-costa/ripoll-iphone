@@ -147,12 +147,12 @@
 	color: 					#fff /*{b-bar-color}*/;
 	font-weight: bold;
 	/*text-shadow: 0  1px  1px  #3e6790;*/
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #999 /*{b-bar-background-start}*/), to( #555 /*{b-bar-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #999 /*{b-bar-background-start}*/, #555 /*{b-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #999 /*{b-bar-background-start}*/, #555 /*{b-bar-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #999 /*{b-bar-background-start}*/, #555 /*{b-bar-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #999 /*{b-bar-background-start}*/, #555 /*{b-bar-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #999 /*{b-bar-background-start}*/, #555 /*{b-bar-background-end}*/);
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #ccc /*{b-bar-background-start}*/), to( #777 /*{b-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #ccc /*{b-bar-background-start}*/, #777 /*{b-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #ccc /*{b-bar-background-start}*/, #777 /*{b-bar-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #ccc /*{b-bar-background-start}*/, #777 /*{b-bar-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #ccc /*{b-bar-background-start}*/, #777 /*{b-bar-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #ccc /*{b-bar-background-start}*/, #777 /*{b-bar-background-end}*/);
 }
 .ui-bar-b,
 .ui-bar-b input,
