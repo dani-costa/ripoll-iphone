@@ -486,17 +486,7 @@ img.imagen60 {
 
 
 
-.ui-controlgroup-controls {
-    display: block;
-    position: fixed;
-    width: 100%;
-}
 
-.ui-header .ui-btn, .ui-footer .ui-btn {
-    display: inline-block;
-    left: 0;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+
+
+
