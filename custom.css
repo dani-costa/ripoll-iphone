@@ -482,3 +482,12 @@ img.imagen60 {
 /* ====== FIN GALERIA ====== */
 
 #checkbox-1{}
+
+
+
+
+.ui-controlgroup-controls {
+    display: block;
+    position: fixed;
+    width: 100%;
+}
