@@ -205,7 +205,7 @@ div.contenido {
 	border-top:1px solid #999;	
 }
 
-.ui-content-cercador {margin-top:-20px;}
+.ui-content-cercador {margin-top:7.5% !important;} /* margin-top:-20px*/
 
 
 /* ====== FIN ESTILOS ESTRUCTURA ====== */
@@ -322,6 +322,7 @@ div.contenido {
     border-top-left-radius: 0;
 	padding-bottom:2%;
 	padding-top:2%;
+	
 }
 
 .ui-btn-header1 {  /* Boton Back */
