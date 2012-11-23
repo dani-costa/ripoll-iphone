@@ -109,6 +109,14 @@ function pararPlayer(obj) {
 
 </script>
 
+<script>
+$("a.ui-btn").click(function() { $(this).attr("disabled", "disabled"); });
+$(document).click(function(evt) {
+     if ($(evt.target).is("a[disabled]"))
+          return false;
+});
+
+</script>
 
 
 </head> 
