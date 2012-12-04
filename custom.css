@@ -322,6 +322,7 @@ div.contenido {
     border-top-left-radius: 0;
 	padding-bottom:2%;
 	padding-top:2%;
+	overflow:hidden; /* AÑADIDO NUEVO*/
 	
 }
 
