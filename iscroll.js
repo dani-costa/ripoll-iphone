@@ -87,7 +87,7 @@ var m = Math,
 			// Zoom
 			zoom: false,
 			zoomMin: 1,
-			zoomMax: 5,
+			zoomMax: 3,
 			doubleTapZoom: 3,
 			wheelAction: 'scroll',
 

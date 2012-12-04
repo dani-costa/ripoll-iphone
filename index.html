@@ -76,6 +76,8 @@ window.addEventListener('load', loaded, false);
 <script type="text/javascript">
 $( '#page100' ).live( 'pageshow',function(event){
   var player = $('audio').get(0);
+  var src = '../assets_android/test_audio_ripoll_20min_16kbps.mp3'; //Audio android
+   playAudio(src); //Android
   if (player!=null) player.play();
 });
 $( '#page100' ).live('pagehide',function(event){
@@ -204,7 +206,7 @@ function pararPlayer(obj) {
                     
                     
                   <li data-role="list-divider" data-divider-theme="e" data-theme="e"><a data-transition="slide" href="#visita-centre-interpretacio">3. Visita al Centre d'interpretació</a></li>
-				  <li><a data-transition="slide" href="#centre-benvinguda">3.1. Benvinguda</a></li>
+				  <li><a data-transition="slide" href="#centre-benvinguda">3.1. Acta de consagració del monestir. Any 888</a></li>
 				  <li><a data-transition="slide" href="#entendre-el-monestir-de-ripoll">3.2. Entendre el monestir de Ripoll</a></li>
 				  <li><a data-transition="slide" href="#monestir-de-santa-maria-de-ripoll">3.3. El monestir de Santa Maria de Ripoll</a></li>
                   <li><a data-transition="slide" href="#la-capella-de-la-congregacio">3.4. La capella de Congregació</a></li>	  
@@ -212,7 +214,7 @@ function pararPlayer(obj) {
                   	<li><a style="font-weight:normal;text-indent: 20px;" data-transition="slide" href="#bressol-introduccio">3.5.1. Introducció</a></li>
                     <li><a style="font-weight:normal;text-indent: 20px;" data-transition="slide" href="#evolucio-territorial-de-catalunya">3.5.2. Evolució territorial de Catalunya</a></li>
                     
-                  <li><a data-transition="slide" href="#historia-del-monestir-de-ripoll">3.6. Història del monestir de Ripoll</a></li>
+                  <li><a data-transition="slide" href="#historia-del-monestir-de-ripoll">3.6. La fe, articuladora de la història</a></li>
                   	<li><a style="font-weight:normal;text-indent: 20px;" data-transition="slide" href="#introduccio-historia">3.6.1. Introducció</a></li>
                     <li><a style="font-weight:normal;text-indent: 20px;" data-transition="slide" href="#els-origens">3.6.2. Els orígens</a></li>
                     <li><a style="font-weight:normal;text-indent: 20px;" data-transition="slide" href="#l-expansio">3.6.3. L'expansió</a></li>
@@ -221,7 +223,7 @@ function pararPlayer(obj) {
                     <li><a style="font-weight:normal;text-indent: 20px;" data-transition="slide" href="#la-restauracio-del-monestir">3.6.6. La reconstrucció del monestir</a></li>
                     
                  <li><a data-transition="slide" href="#la-fe-motor-de-la-vida-espiritual">3.7. La fe, motor de la vida espiritual</a></li>
-                 <li><a data-transition="slide" href="#la-fe-motor-de-la-cultura-i-coneixement">3.8. La fe, motor de la cultura i coneixement</a></li>
+                 <li><a data-transition="slide" href="#la-fe-motor-de-la-cultura-i-coneixement">3.8. La fe, motor de cultura i coneixement</a></li>
                  <li><a data-transition="slide" href="#la-fe-motor-de-cohesio-social-i-territorial">3.9. La fe, motor de cohesió social i territorial</a></li>
                  <li><a data-transition="slide" href="#abaciologi-ripoll">3.10. Abaciologi de Ripoll</a></li>
                  <li><a data-transition="slide" href="#el-monestir-de-ripoll-i-la-catalunya-cristiana">3.11. El monestir de Ripoll i la Catalunya cristiana</a></li>
@@ -2502,12 +2504,12 @@ Els treballs de restauració del claustre duts a terme entre el 2010 i el 2012 v
 			<img src="img/visita_al_centre.png" class="imagen100" alt="" />
 			<div data-role="content">			
 				<ul class="ui-listview5-2" data-role="listview">
-					<li class="ui-btn5-2"><a data-transition="slide" href="#centre-benvinguda">Benvinguda</a></li>
+					<li class="ui-btn5-2"><a data-transition="slide" href="#centre-benvinguda">Acta de consagració del monestir. Any 888</a></li>
 					<li class="ui-btn5-2"><a data-transition="slide" href="#entendre-el-monestir-de-ripoll">Entendre el monestir de Ripoll</a></li>
 					<li class="ui-btn5-2"><a data-transition="slide" href="#monestir-de-santa-maria-de-ripoll">Monestir de Santa Maria de Ripoll</a></li>
 					<li class="ui-btn5-2"><a data-transition="slide" href="#la-capella-de-la-congregacio">La Capella de la Congregació</a></li>
 					<li class="ui-btn5-2"><a data-transition="slide" href="#ripoll-bressol-de-catalunya">Ripoll, bressol de Catalunya</a></li>
-                    <li class="ui-btn5-2"><a data-transition="slide" href="#historia-del-monestir-de-ripoll">Història del monestir de Ripoll</a></li>
+                    <li class="ui-btn5-2"><a data-transition="slide" href="#historia-del-monestir-de-ripoll">La fe, articuladora de la història</a></li>
                     <li class="ui-btn5-2"><a data-transition="slide" href="#la-fe-motor-de-la-vida-espiritual">La fe, motor de la vida espiritual</a></li>
 					<li class="ui-btn5-2"><a data-transition="slide" href="#la-fe-motor-de-la-cultura-i-coneixement">La fe, motor de la cultura i coneixement</a></li>
 					<li class="ui-btn5-2"><a data-transition="slide" href="#la-fe-motor-de-cohesio-social-i-territorial">La fe, motor de cohesió social i territorial</a></li>
@@ -2535,7 +2537,7 @@ Els treballs de restauració del claustre duts a terme entre el 2010 i el 2012 v
  <div data-role="controlgroup" data-type="horizontal" data-corners="false">
 
     <a class="ui-btn-header1" data-rel="back" data-role="button" data-inline="true" data-theme="c" data-corners="false" data-transition="slide" data-direction="reverse" data-icon="arrow-l">&nbsp;</a>
-    <a class="ui-btn-header3-1" data-role="button" data-inline="true" data-theme="c" data-corners="false"><small>Benvinguda</small></a>
+    <a class="ui-btn-header3-1" data-role="button" data-inline="true" data-theme="c" data-corners="false"><small>Acta de consagració del monestir. Any 888</small></a>
     <a class="ui-btn-header2" href="#cercador" data-role="button" data-inline="true" data-theme="c" data-corners="false" data-transition="slide" data-icon="search">&nbsp;</a>
      
  </div>
@@ -2547,7 +2549,7 @@ Els treballs de restauració del claustre duts a terme entre el 2010 i el 2012 v
 			<div class="img">
 			  <a href="#galeria1" data-transition="flip"><img src="img/centre_benvinguts.png"  class="imagen100" alt="" /></a>
 			</div>
-			<strong>Benvinguda</strong><br /><hr class="lineacorta" />
+			<strong>Acta de consagració del monestir. Any 888</strong><br /><hr class="lineacorta" />
             Acta de consagració de l’església del monestir de santa Maria de Ripoll (fragment)<br />
 20 d’abril de 888<br />
 En aquells temps, vingué el distingit senyor, sostenidor i amant de la pau, pare reverendíssim, suprem sacerdot, Gotmar, bisbe, al comtat d'Osona, a la vall que en diuen de Ripoll, per tal de consagrar l'església de Déu, emplaçada en aquell lloc i dedicada en honor de santa Maria, mare de Déu; església que deu la seva fundació a l'il·lustre baró el comte Guifré i a la comtessa Guinedilda, que ho feren impulsats pels bons sentiments i la voluntat divina, i als quals correspon, doncs, el mèrit d'haver alçat les portes del temple.
@@ -2579,7 +2581,7 @@ En aquells temps, vingué el distingit senyor, sostenidor i amant de la pau, par
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page129"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>1. Benvinguda</small></span></a>
+		 <a data-transition="slide" href="#page129"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>1. Acta de consagració del monestir. Any 888</small></span></a>
 		 </div>  
         
 		</div>
@@ -2613,12 +2615,12 @@ En aquells temps, vingué el distingit senyor, sostenidor i amant de la pau, par
 			  <a href="#galeria1" data-transition="flip"><img src="img/centre_entendre.png"  class="imagen100" alt="" /></a>
 			</div>
 			<strong>Entendre el monestir de Ripoll</strong><br /><hr class="lineacorta" />
-            Entendre el monestir de Ripoll <br /><br />
+            
 
-FE. La recerca de Déu<br />
-CULTURA. Font de coneixement<br />
-SOCIETAT. Articulació del territori<br />
-BRESSOL. El naixement de Catalunya<br /><br />
+<strong>FE.</strong> La recerca de Déu<br />
+<strong>CULTURA.</strong> Font de coneixement<br />
+<strong>SOCIETAT.</strong> Articulació del territori<br />
+<strong>BRESSOL.</strong> El naixement de Catalunya<br /><br />
 	
 <div class="ui-field-contain ui-body ui-br" data-role="fieldcontain">
 <fieldset class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal" data-type="horizontal" data-role="controlgroup">
@@ -2661,7 +2663,7 @@ BRESSOL. El naixement de Catalunya<br /><br />
  <div data-role="controlgroup" data-type="horizontal" data-corners="false">
 
      <a class="ui-btn-header1" data-rel="back" data-role="button" data-inline="true" data-theme="c" data-corners="false" data-transition="slide" data-direction="reverse" data-icon="arrow-l">&nbsp;</a>
-    <a class="ui-btn-header3-1" data-role="button" data-inline="true" data-theme="c" data-corners="false"><small>Monestir de Santa Maria de Ripoll</small></a>
+    <a class="ui-btn-header3-1" data-role="button" data-inline="true" data-theme="c" data-corners="false"><small>El monestir de Santa Maria de Ripoll</small></a>
     <a class="ui-btn-header2" href="#cercador" data-role="button" data-inline="true" data-theme="c" data-corners="false" data-transition="slide" data-icon="search">&nbsp;</a>
      
  </div>
@@ -2673,7 +2675,7 @@ BRESSOL. El naixement de Catalunya<br /><br />
 			<div class="img">
 			  <a href="#galeria1" data-transition="flip"><img src="img/centre_santa_maria.png"  class="imagen100" alt="" /></a>
 			</div>
-			<strong>Monestir de Santa Maria de Ripoll</strong><br /><hr class="lineacorta" />
+			<strong>El monestir de Santa Maria de Ripoll</strong><br /><hr class="lineacorta" />
            El monestir de Santa Maria de Ripoll, emblema de Catalunya, és ànima d’aquesta terra on ha quedat gravat, sobre pedra i en la memòria del país, un esplendorós passat medieval. Fundat per Guifré I el Pelós l'any 879, va tenir un paper clau en la configuració del territori i de l’església catalana. <br />
 Avui, el monestir de Santa Maria de Ripoll està format per l'església, de la qual destaca l’excepcional portalada, un dels monuments romànics més importants d’occident, i el claustre. El conjunt monumental de Ripoll està declarat Bé Cultural d’Interès Nacional per la Generalitat de Catalunya.
 <br /><br />
@@ -2704,7 +2706,7 @@ Avui, el monestir de Santa Maria de Ripoll està format per l'església, de la q
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page131"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>3. Monestir de Santa Maria de Ripoll</small></span></a>
+		 <a data-transition="slide" href="#page131"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>3. El monestir de Santa Maria de Ripoll</small></span></a>
 		 </div>  
         
 		</div>
@@ -2869,7 +2871,7 @@ La iniciativa de Guifré es basava en la confluència de tres factors que van se
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page133"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>5.1. Introducció</small></span></a>
+		 <a data-transition="slide" href="#page133"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>5. Introducció</small></span></a>
 		 </div>  
         
 		</div>
@@ -2936,7 +2938,7 @@ Començava, així, una trajectòria expansiva de la Corona cap a territori musul
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page134"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>5.2. Evolució territorial de Catalunya</small></span></a>
+		 <a data-transition="slide" href="#page134"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>6. Evolució territorial de Catalunya</small></span></a>
 		 </div>  
         
 		</div>
@@ -2955,7 +2957,7 @@ Començava, així, una trajectòria expansiva de la Corona cap a territori musul
  <div data-role="controlgroup" data-type="horizontal" data-corners="false">
 
      <a class="ui-btn-header1" data-rel="back" data-role="button" data-inline="true" data-theme="c" data-corners="false" data-transition="slide" data-direction="reverse" data-icon="arrow-l">&nbsp;</a>
-    <a class="ui-btn-header3-1" data-role="button" data-inline="true" data-theme="c" data-corners="false"><small>Història del monestir de Ripoll</small></a>
+    <a class="ui-btn-header3-1" data-role="button" data-inline="true" data-theme="c" data-corners="false"><small>La fe, articuladora de la història</small></a>
     <a class="ui-btn-header2" href="#cercador" data-role="button" data-inline="true" data-theme="c" data-corners="false" data-transition="slide" data-icon="search">&nbsp;</a>
      
  </div>
@@ -3034,7 +3036,7 @@ La fe cristiana ha determinat els curs de la nostra història. A l’edat mitjan
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page135"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>6.1. Introducció</small></span></a>
+		 <a data-transition="slide" href="#page135"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>7. Introducció</small></span></a>
 		 </div>  
         
 		</div>
@@ -3094,7 +3096,7 @@ La fe cristiana ha determinat els curs de la nostra història. A l’edat mitjan
 </div> -->
     
  <div style="margin-top:20px;" class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page136"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>6.2. Els orígens</small></span></a>
+		 <a data-transition="slide" href="#page136"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>8. Els orígens</small></span></a>
 		 </div>  
         
 		</div>
@@ -3155,7 +3157,7 @@ La fe cristiana ha determinat els curs de la nostra història. A l’edat mitjan
 </div> -->
     
  <div style="margin-top:20px;" class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page137"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>6.3. L'expansió </small></span></a>
+		 <a data-transition="slide" href="#page137"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>9. L'expansió </small></span></a>
 		 </div>  
         
 		</div>
@@ -3219,7 +3221,7 @@ Amb les successives guerres, però, el monestir va patir una degradació progres
 </div> -->
     
  <div style="margin-top:20px;" class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page138"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>6.4. El declivi</small></span></a>
+		 <a data-transition="slide" href="#page138"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>10. El declivi</small></span></a>
 		 </div>  
         
 		</div>
@@ -3280,7 +3282,7 @@ Amb les successives guerres, però, el monestir va patir una degradació progres
 </div> -->
     
  <div style="margin-top:20px;" class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page139"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>6.5. El renaixement</small></span></a>
+		 <a data-transition="slide" href="#page139"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>11. El renaixement</small></span></a>
 		 </div>  
         
 		</div>
@@ -3339,7 +3341,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page140"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>6.6. La reconstrucció del Monestir</small></span></a>
+		 <a data-transition="slide" href="#page140"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>15. La reconstrucció del Monestir</small></span></a>
 		 </div>  
         
 		</div>
@@ -3400,7 +3402,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page141"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>7. La fe, motor de la vida espiritual</small></span></a>
+		 <a data-transition="slide" href="#page141"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>12. La fe, motor de la vida espiritual</small></span></a>
 		 </div>  
         
 		</div>
@@ -3422,7 +3424,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
  <div data-role="controlgroup" data-type="horizontal" data-corners="false">
 
      <a class="ui-btn-header1" data-rel="back" data-role="button" data-inline="true" data-theme="c" data-corners="false" data-transition="slide" data-direction="reverse" data-icon="arrow-l">&nbsp;</a>
-    <a class="ui-btn-header3-1" data-role="button" data-inline="true" data-theme="c" data-corners="false"><small>La fe, motor de la cultura i coneixement</small></a>
+    <a class="ui-btn-header3-1" data-role="button" data-inline="true" data-theme="c" data-corners="false"><small>La fe, motor de cultura i coneixement</small></a>
     <a class="ui-btn-header2" href="#cercador" data-role="button" data-inline="true" data-theme="c" data-corners="false" data-transition="slide" data-icon="search">&nbsp;</a>
      
  </div>
@@ -3434,7 +3436,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 			<div class="img">
 			  <a href="#galeria1" data-transition="flip"><img src="img/centre_cultura.png"  class="imagen100" alt="" /></a>
 			</div>
-			<strong>La fe, motor de la cultura i coneixement<br/><small>La dimensió nacional</small></strong><br /><hr class="lineacorta" />
+			<strong>La fe, motor de cultura i coneixement<br/></strong><br /><hr class="lineacorta" />
             Santa Maria de Ripoll va ser un centre cultural de primer ordre en la Catalunya de l’edat mitjana: esdevingué una escola monàstica de referència en l’època i va deixar un important llegat amb autèntiques obres mestres, com la Bíblia de Ripoll, la Bíblia de Rodes, o la portalada romànica del monestir.
 <br /><br />
 	
@@ -3464,7 +3466,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page142"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>8. La fe, motor de la cultura i coneixement</small></span></a>
+		 <a data-transition="slide" href="#page142"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>13. La fe, motor de cultura i coneixement</small></span></a>
 		 </div>  
         
 		</div>
@@ -3495,7 +3497,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 			<div class="img">
 			  <a href="#galeria1" data-transition="flip"><img src="img/centre_social.png"  class="imagen100" alt="" /></a>
 			</div>
-			<strong>La fe, motor de cohesió social i territorial<br/><small>La dimensió nacional</small></strong><br /><hr class="lineacorta" />
+			<strong>La fe, motor de cohesió social i territorial<br/></strong><br /><hr class="lineacorta" />
            El monestir de Ripoll és una peça essencial en la tasca de repoblació que emprèn Guifré el Pelós a finals del segle IX. A la seva empara s’hi establiren habitatges, i els nuclis poblats es van anar multiplicant al seu entorn. Aquest desenvolupament social va anar acompanyat d’un important impuls de la vida eclesiàstica i parroquial, impulsada en part pel monestir. La tasca pastoral de l’Església fou clau per a la cohesió religiosa i cultural del territori.
 <br /><br />
 	
@@ -3525,7 +3527,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page143"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>9. La fe, motor de cohesió social i territorial</small></span></a>
+		 <a data-transition="slide" href="#page143"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>14. La fe, motor de cohesió social i territorial</small></span></a>
 		 </div>  
         
 		</div>
@@ -3586,7 +3588,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page144"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>10. Abaciologi de Ripoll</small></span></a>
+		 <a data-transition="slide" href="#page144"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>16. Abaciologi de Ripoll</small></span></a>
 		 </div>  
         
 		</div>
@@ -3615,7 +3617,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 			<div class="img">
 			  <a href="#galeria1" data-transition="flip"><img src="img/centre_catalunya_cristiana.png"  class="imagen100" alt="" /></a>
 			</div>
-			<strong>El monestir de Ripoll i la Catalunya cristiana<br/><small>La dimensió social</small></strong><br /><hr class="lineacorta" />
+			<strong>El monestir de Ripoll i la Catalunya cristiana<br/></strong><br /><hr class="lineacorta" />
             Oliba, abat de Ripoll i bisbe de Vic, procurà unir el desgavell de monestirs que s’estenien arreu per tal d’enfortir el paper espiritual, administratiu i cultural de l’església. Amb la seva obra, contribuí al repoblament dels territoris conquerits als musulmans tot configurant la Catalunya cristiana.
 <br /><br />
 	
@@ -3645,7 +3647,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page145"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>11. El monestir de Ripoll i la Catalunya cristiana</small></span></a>
+		 <a data-transition="slide" href="#page145"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>17. El monestir de Ripoll i la Catalunya cristiana</small></span></a>
 		 </div>  
         
 		</div>
@@ -3679,7 +3681,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 				<ul class="ui-listview3" data-role="listview">
 					<li class="ui-btn3"><a data-transition="slide" href="#introduccio-cultura-catalana">Introducció</a></li>
 					<li class="ui-btn3"><a data-transition="slide" href="#el-romanic-al-monestir">El románic al monestir. La portalada</a></li>
-					<li class="ui-btn3"><a data-transition="slide" href="#monestir-de-ripoll-simbol-de-renaixenca">Monestir de Ripoll. Simbol de la Renaixença</a></li>
+					<li class="ui-btn3"><a data-transition="slide" href="#monestir-de-ripoll-simbol-de-renaixenca">El monestir de Ripoll. Simbol de la Renaixença</a></li>
 					
                     
 				</ul>		
@@ -3739,7 +3741,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page146"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>12.1. Introducció</small></span></a>
+		 <a data-transition="slide" href="#page146"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>18. Introducció</small></span></a>
 		 </div>  
         
 		</div>
@@ -3798,7 +3800,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div> -->
     
  <div style="margin-top:20px;" class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page147"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>12.2. El romànic al monestir. La portalada</small></span></a>
+		 <a data-transition="slide" href="#page147"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>19. El romànic al monestir. La portalada</small></span></a>
 		 </div>  
         
 		</div>
@@ -3857,7 +3859,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div> -->
     
  <div style="margin-top:20px;" class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page148"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>12.3. El monestir de Ripoll, símbol de la Renaixença</small></span></a>
+		 <a data-transition="slide" href="#page148"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>20. El monestir de Ripoll, símbol de la Renaixença</small></span></a>
 		 </div>  
         
 		</div>
@@ -3880,7 +3882,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
  <div data-role="controlgroup" data-type="horizontal" data-corners="false">
 
     <a class="ui-btn-header1" data-rel="back" data-role="button" data-inline="true" data-theme="c" data-corners="false" data-transition="slide" data-direction="reverse" data-icon="arrow-l">&nbsp;</a>
-    <a class="ui-btn-header3-1" data-role="button" data-inline="true" data-theme="c" data-corners="false"><small>El monestir de Ripoll i la cultura nissaga comtal</small></a>
+    <a class="ui-btn-header3-1" data-role="button" data-inline="true" data-theme="c" data-corners="false"><small>El monestir de Ripoll i la nissaga comtal</small></a>
     <a class="ui-btn-header2" href="#cercador" data-role="button" data-inline="true" data-theme="c" data-corners="false" data-transition="slide" data-icon="search">&nbsp;</a>
      
  </div>
@@ -3892,7 +3894,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 			<div class="img">
 			  <a href="#galeria1" data-transition="flip"><img src="img/centre_nissaga.png"  class="imagen100" alt="" /></a>
 			</div>
-			<strong>El monestir de Ripoll i la cultura nissaga comtal</small></strong><br /><hr class="lineacorta" />
+			<strong>El monestir de Ripoll i la nissaga comtal</small></strong><br /><hr class="lineacorta" />
            Amb Guifré I el Pelós, comte de Barcelona, Urgell, Cerdanya-Conflent i Girona-Besalú, s’inicia el llinatge dels comtes de Barcelona, el denominat casal de Barcelona, que continuaria fins la mort de Martí l’Humà, el 1410.
 <br /><br />
 	
@@ -3922,7 +3924,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page149"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>13. El monestir de Ripoll i la cultura nissaga comtal</small></span></a>
+		 <a data-transition="slide" href="#page149"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>21. El monestir de Ripoll i la nissaga comtal</small></span></a>
 		 </div>  
         
 		</div>
@@ -3985,7 +3987,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page150"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>14. Espai Pau Casals</small></span></a>
+		 <a data-transition="slide" href="#page150"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>22. Espai Pau Casals</small></span></a>
 		 </div>  
         
 		</div>
@@ -4048,7 +4050,7 @@ impulsades pel bisbe de Vic Josep Morgades, i es consagrà l’església restaur
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page151"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>15. Reflexions a l'entorn d'un símbol</small></span></a>
+		 <a data-transition="slide" href="#page151"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>23. Reflexions a l'entorn d'un símbol</small></span></a>
 		 </div>  
         
 		</div>
@@ -4112,7 +4114,7 @@ Làmina de la Bíblia amb il·lustracions referents als darrers dies de la vida 
 </div>
     
  <div class="ui-btn-sound" data-role="button" data-corners="false">
-		 <a data-transition="slide" href="#page152"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>16. La Bíblia de Ripoll</small></span></a>
+		 <a data-transition="slide" href="#page152"><span style="vertical-align:super;"><img class="iconosonido" src="img/soundicon.png" width="18" height="18" alt=""><small>24. La Bíblia de Ripoll</small></span></a>
 		 </div>  
         
 		</div>
